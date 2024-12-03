@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="324.278" tests="16" skipped="0" failures="0" errors="0">
+<testcase classname="Verification Module" name="Verify the verfication module is present or not" time="11.992">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify all sub-modules are displayed correctly after Clicking on the &quot;verification&quot; Module." time="17.521">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+Then Verify that "Inventory" button is visible..............................passed
+Then Verify that "Pharmacy" button is visible...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify the presence of Requisition tab in inventory section with all fields." time="17.082">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+Then Verify that "Inventory" button is visible..............................passed
+Then Verify that "Pharmacy" button is visible...............................passed
+And Click on "Requisition" under "Inventory"................................passed
+Then Verify these elements are visible on the page Requisition, Purchase Request, Purchase Order, GR Quality Inspection, Ok, print, First, Previous, Next, Last, view, search bar, Requisition Status, Date range, Pending, Approved, Rejected.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to navigate on another sub module after open the inventory module" time="12.421">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on "Pharmacy" tab.................................................passed
+Then Verify that the user is able to navigate to "Verification/Pharmacy/" section.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to navigate on another sub tab after open the Requisition tab" time="12.785">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on "Purchase Order" under "Inventory".............................passed
+Then Verify that the user is able to navigate to "Verification/Inventory/PurchaseOrder" section.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to search the data by picking the date filter" time="9.861">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+And Choose the date from Jan 2020 to March 2024.............................passed
+And Click on the "all" Radio button from List by Verification Status........passed
+And Click on OK button......................................................passed
+Then Verify that all the dates present inside the requested date are within the range.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify the tooltip and it's text present on hover the mouse on &quot;Star&quot;" time="6.142">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Hover on the star and Verify tooltip text as "Remember this Date"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify dates are remembered correclty" time="8.599">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Choose the date from Jan 2020 to March 2024.............................passed
+And Click on tooltip button.................................................passed
+And Click on OK button......................................................passed
+And Click on "Pharmacy" tab.................................................passed
+And Click on "Inventory" tab................................................passed
+Then Verify that the date range remains the same............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify data range by Select &quot;one week&quot; option from drop down" time="16.972">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Select 'Last 3 Months' option from the date range dropdown..............passed
+And Click on OK button......................................................passed
+Then Verify that all the dates present inside the requested date are within the range.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify following radio buttons are selectable:Pending, Approved, Rejected &amp; All" time="8.282">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on the "pending" Radio button from List by Verification Status....passed
+And Click on the "approved" Radio button from List by Verification Status...passed
+And Click on the "rejected" Radio button from List by Verification Status...passed
+And Click on the "all" Radio button from List by Verification Status........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Create and Verify a Purchase Request in Inventory" time="22.436">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the Internal section under Inventory......................passed
+And Click on Purchase Request...............................................passed
+And Click on the Create Purchase Request button.............................passed
+And Fill in the required fields to create a Purchase Request................passed
+And Click on the Request button.............................................passed
+Then Verify that the Purchase Request has been successfully created.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify Purchase Request in Verification Module" time="17.403">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+Then Verify that the status of the Purchase Request is "Pending" in the list..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Approve the Purchase Request and Verify Status" time="31.806">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+When Click on the View button under the action column for the Purchase Request..passed
+And Approve the Purchase Request............................................passed
+Then Verify the success message confirming the approval.....................passed
+And Click on the Approved radio button......................................passed
+Then Verify that the status of the Purchase Request has changed to Approved..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify Reject All button without filling remark field" time="21.148">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+When Click on the View button under the action column for the Purchase Request..passed
+And Click on Reject All button..............................................passed
+Then Verify a popup message should appear stating Remarks is compulsory for cancellation..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Reject the Approved Purchase Request and Verify Status" time="31.719">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+And Click on the Approved radio button......................................passed
+When Click on the View button under the action column with status approved for the Purchase Request..passed
+And Click on Reject All button with remarks.................................passed
+And Click on the Rejected radio button......................................passed
+Then Verify that the status of the Purchase Request has changed to Rejected..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Take Screenshot of the current page" time="8.439">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+Then Take screenshot of the current page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
